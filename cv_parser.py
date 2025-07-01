@@ -82,7 +82,7 @@ Locations:
 
 
 def cv_parser_node(state: dict) -> dict:
-    pdf_path = state.get("cv_path", "data/cv.pdf")
+    pdf_path = state.get("cv_path", "data/sample_cv.pdf")
     raw_text = extract_text_from_pdf(pdf_path)
     user_input = state.get("user_input", "")
     if not user_input.strip():
